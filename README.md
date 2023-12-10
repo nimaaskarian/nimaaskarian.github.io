@@ -1,3 +1,3 @@
 # Oh
 personal blog test
-[file](https://nimaaskarian.github.io/FILE.md)
+[file](https://nimaaskarian.github.io/FILE)
