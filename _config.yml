@@ -1,3 +1,7 @@
 remote_theme: "jekyll/minima@1e8a445"
+title: Nima Askarian's Blog
+description: Nima Askarian's personal blog
+author: Nima Askarian
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed

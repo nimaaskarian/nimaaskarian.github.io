@@ -1,4 +1,4 @@
-blogs := $(wildcard blog/*.md)
+blogs := $(wildcard _posts/*.md)
 
 index.md: $(blogs) .index.md
 	cat .index.md > index.md
