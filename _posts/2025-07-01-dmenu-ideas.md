@@ -1,6 +1,5 @@
 # dmenu ideas
-this is some dmenu scripts and ideas to use dmenu with everything. dmenu can be
-used with everything
+this is some dmenu scripts and ideas to use dmenu with everything.
 
 # what is dmenu?
 [dmenu](https://tools.suckless.org/dmenu/) is a minimal X launcher, that lets
