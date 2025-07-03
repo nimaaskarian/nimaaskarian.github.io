@@ -50,7 +50,7 @@ dictionary, this section if for you.
 yay -S dict-freedict-deu-eng dict-freedict-eng-deu
 ```
 
-the above will install deutsch to english, using `yay`[^2]. 
+the above will install deutsch to english and vice versa, using `yay`[^2]. 
 
 [^2]: you can use `paru` or `makepkg` accordingly
 
@@ -83,7 +83,7 @@ the most complete offline thesaurus[^3]. according to
 [wikipedia](https://en.wikipedia.org/wiki/Moby_Project#Thesaurus) it averages in
 83.3 synonyms per root word.
 
-you can install this using the following `yay` command:
+you can install this using the following `yay` [^2] command:
 ```bash
 yay -S dict-moby-thesaurus
 ```
