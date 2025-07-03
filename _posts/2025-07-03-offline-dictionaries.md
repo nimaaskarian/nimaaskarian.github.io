@@ -1,11 +1,12 @@
 why offline dictionaries? dictionaries are often small files (my whole setup of
 dictionaries are 99M `du`). there's no need to waste your internet bandwidth
-with them, searching through web dictionaries all the time.
+for them, searching through web dictionaries all the time.
 also; local files often give you freedom and flexability in what front-end to use.
 
 not to mention that when you live in some specific country the middle east, its
-quite easy to get in a situation that the network is completely shutdown. well,
-the need to educate oneself is higher in times of war or middle of a revolution.
+quite easy to get stuck in a situation that the network is completely shutdown.
+well, the need to educate oneself is higher in times of war or middle of a
+revolution.
 # Offline dictionaries, in Arch linux
 [dictd](https://archlinux.org/packages/?name=dictd) package in arch linux is the
 gateway to having fully offline and amazing dictionaries. by default, it uses
