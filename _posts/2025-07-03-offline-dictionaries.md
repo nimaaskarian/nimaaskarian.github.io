@@ -1,7 +1,7 @@
 why offline dictionaries? dictionaries are often small files (my whole setup of
 dictionaries are 99M `du`). there's no need to waste your internet bandwidth
 with them, searching through web dictionaries all the time.
-also; local files often give you freedom and flexability in what system to use.
+also; local files often give you freedom and flexability in what front-end to use.
 
 not to mention that when you live in some specific country the middle east, its
 quite easy to get in a situation that the network is completely shutdown. well,
@@ -130,12 +130,12 @@ database deu-eng {
 	data /usr/share/dictd/deu-eng.dict.dz
 	index /usr/share/dictd/deu-eng.index
 }
-database moby-thesaurus {
-	data /usr/share/dictd/moby-thesaurus.dict
-	index /usr/share/dictd/moby-thesaurus.index
-}
 database gcide {
 	data /usr/share/dictd/gcide.dict.dz
 	index /usr/share/dictd/gcide.index
+}
+database moby-thesaurus {
+	data /usr/share/dictd/moby-thesaurus.dict
+	index /usr/share/dictd/moby-thesaurus.index
 }
 ```
