@@ -10,7 +10,7 @@ and i'd only need to read some environment variables in that executable file.
 but preview is where other tui file managers shine most, and do a better job
 that `nnn` does. or do they?
 
-# nnn preview-tabbed and dwm
+# focus on nnn with preview-tabbed and dwm
 the `preview-tabbed` uses [suckless's
 tabbed](https://tools.suckless.org/tabbed/) to open a x window that shows some
 preview application in it. this plugin is by default coded in a way that uses
@@ -29,7 +29,7 @@ preview; but there are a couple of problems, mentioned in the following.
 
 i have my own "forked" `preview-tabbed` that fixes these issues. following is
 details of how it has been fixed. you can access the fork from
-[here](/public/preview-tabbed)
+[here](/public/preview-tabbed).
 
 ## pdf preview is not rendered. i need to focus it
 zathura waits for window focus/window size change to render the document, hence
@@ -38,10 +38,9 @@ zathura. there's a huge problem of loading the document (some epub files take
 eternities to load), which you need to focus on the x window ***after*** the
 loading of document is ended.
 
-a workaround is to have a loop that tries to focus on x window's id every couple
-of deciseconds.
+workaround i've used is to have a loop that tries to focus on `tabbed`'s x
+window's every couple of deciseconds, if the `tabbed` isn't active already.
 
 ## zathura isn't set for epub's mime type
 to fix this, you just need to match `applciation/epub+zip` mime type in the
 switch case inside `~/.config/nnn/plugins/preview-tabbed`
-```
