@@ -28,8 +28,8 @@ this plugin uses [pwmt's zathura](https://github.com/pwmt/zathura) for pdf
 preview; but there are a couple of problems, mentioned in the following.
 
 i have my own "forked" `preview-tabbed` that fixes these issues. following is
-details of how it has been fixed. you can access the fork from
-[here](/public/preview-tabbed).
+details of how each of these problems has been fixed. you can access the fork
+from [here](/public/preview-tabbed).
 
 ## pdf preview is not rendered. i need to focus it
 zathura waits for window focus/window size change to render the document, hence
