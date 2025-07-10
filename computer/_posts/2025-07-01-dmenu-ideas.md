@@ -168,17 +168,17 @@ path=~/.cache/bingewatcher/"$name.bw"
 next_episode=$(bw --print-mode next-episode "$path")
 
 readarr_links() {
-  readarray -t arr  < <(grep "/$name/.*$next_episode" ~/Texts/series)
+  readarray -t arr  < <(grep "/$name/.*$next_episode" ~/Texts/series-links)
 }
 
-if [ -d "~/Files/Series/$name" ]; then
-  readarr_links
-else
+if [ -d "$HOME/Files/Series/$name" ]; then
   fd $next_episode ~/Files/Series/"$name"
   readarray -t arr  < <(fd $next_episode ~/Files/Series/"$name")
   [ ${#arr[@]} -eq 0 ] && {
     readarr_links
   }
+else
+  readarr_links
 fi
 if [ "${#arr[@]}" == 1 ]; then
   sel=${arr[0]}
