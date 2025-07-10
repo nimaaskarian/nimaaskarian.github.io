@@ -165,15 +165,28 @@ fi
 
 name=$(bw --print-mode name | dmenu -i -p series "$@") || exit 1
 path=~/.cache/bingewatcher/"$name.bw"
-next_episode=$(bw "$path" --print-mode next-episode)
+next_episode=$(bw --print-mode next-episode "$path")
 
-readarray -t arr  < <(grep "$name.*$next_episode" links2series)
+readarr_links() {
+  readarray -t arr  < <(grep "/$name/.*$next_episode" ~/Texts/series)
+}
+
+if [ -d "~/Files/Series/$name" ]; then
+  readarr_links
+else
+  fd $next_episode ~/Files/Series/"$name"
+  readarray -t arr  < <(fd $next_episode ~/Files/Series/"$name")
+  [ ${#arr[@]} -eq 0 ] && {
+    readarr_links
+  }
+fi
 if [ "${#arr[@]}" == 1 ]; then
   sel=${arr[0]}
 else
-  sel=$(printf "%s\n" "${arr[@]}" | dmenu -i -p qualities) || exit 1
+  sel=$(printf "%s\n" "${arr[@]}" | dmenu  -l 10 -i -p qualities "$@") || exit 1
 fi
-mpv "$sel" && bw "$path" -a 1
+
+mpv "$sel" && bw watch 1 "$path"
 ```
 
 
