@@ -41,3 +41,13 @@ makes the other person less.
 know how shitty the series is; ofc the director knows that too, but you're just
 feeling their pocket by wasting your time and mental energy at that point
 
+## a table of series that made me feel this way
+a table about series i felt obliged to write this blog post after watching
+
+| serie                  | which season to watch to | note                                                                                   | 
+|------------------------|--------------------------|----------------------------------------------------------------------------------------|
+| rick and morty         | s1                       | the whole humor is repeated. nothing new happens. only watch one season                |
+| the boys               | don't watch              | its good for one or two seasons, but ends in cliff hanger and the quality goes to shit |
+| invincible             | don't watch              | its good for one or two seasons, but ends in cliff hanger and the quality goes to shit |
+| babylon berlin         | s1 and s2                | imagine the series ends at the end of s2. s3 and s4 aren't really good.                |
+| the whole marvel thing | don't watch              | don't. just don't. no matter how good it seems it is, its not. don't watch it          |
